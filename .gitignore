@@ -3,5 +3,5 @@
 /dist/
 
 /tools/logs/
-
+*.pyc
 .idea

@@ -122,7 +122,7 @@ class DetectronCheckpointer(Checkpointer):
             f = catalog_f
         if f.startswith("http"):
             # if the file is a url path, download it and cache it
-            cached_f = cache_url(f)
+            cached_f = cache_url(f, '/media/data/model/pytorch')
             self.logger.info("url {} cached in {}".format(f, cached_f))
             f = cached_f
 
